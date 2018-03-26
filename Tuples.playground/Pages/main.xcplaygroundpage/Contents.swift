@@ -17,22 +17,14 @@
 // write your code here
 
 
-
-
-
-
-
+var person: (String, Int) = ("Deran", 41)
 
 /*: question2
  ### 2. Print out "<Name> is <Age> years old" using the tuple you created in Question 1.
  */
 // write your code here
 
-
-
-
-
-
+print("\(person.0) is \(person.1) years old")
 
 
 /*: question3
@@ -41,10 +33,7 @@
 // write your code here
 
 
-
-
-
-
+person.1 = person.1 + 1
 
 
 /*: question4
@@ -54,32 +43,24 @@
 
 
 
-
-
-
-
+print ("Happy \(person.1) birthday, \(person.0)")
 
 /*: question5
  ### 5. Create another person variable called `someone` using _named_ fields for the name and age.
  */
 // write your code here
 
+let personName: String = "Keshni"
+let personAge: Int = 37
 
-
-
-
-
-
+var someone: (String, Int) = (personName, personAge)
 
 /*: question6
  ### 6. Print out "<Name> is <Age> years old" for the `someone` variable you created in Question 5.
  */
 // write your code here
 
-
-
-
-
+print("\(someone.0) is \(someone.1) years old")
 
 
 /*:
@@ -87,18 +68,14 @@
  */
 // write your code here
 
-
-
-
-
-
+someone.1 = someone.1 + 1
 
 /*:
  ### 8. Print out "Happy <Age> birthday, <Name>!" using the `someone` variable.
  */
 // write your code here
 
-
+print ("Happy \(someone.1) birthday, \(someone.0)")
 
 
 
@@ -110,22 +87,12 @@
  */
 // write your code here
 
-
-
-
-
-
-
+let human: (String, Int) = (personName, personAge)
 
 /*:
  ### 10. Can you change `human`'s age? Why or why not?
  */
 
-
-
-
-
-
-
+// human Cannot be changed as both name & age are constants in human.
 
 //: Check [here](https://github.com/learn-co-curriculum/swift-tuples-lab/blob/solution/Tuples.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
